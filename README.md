@@ -66,16 +66,26 @@ DesignKit gives every iOS project a **single source of truth** for colors, typog
 #### Via Xcode
 
 1. Open your project in Xcode
-2. Go to **File → Add Package Dependencies → Add Local…**
-3. Navigate to the `DesignKit` folder and click **Add Package**
-4. Select the `DesignKit` product and add it to your app target
+2. Go to **File → Add Package Dependencies…**
+3. Enter the repository URL: `https://github.com/farhanumer/DesignKit.git`
+4. Set the version rule to **Up to Next Major Version** from `1.0`
+5. Select the **DesignKit** product and add it to your app target
 
 #### Via Package.swift
 
 ```swift
 dependencies: [
-    .package(path: "../DesignKit")
+    .package(url: "https://github.com/farhanumer/DesignKit.git", from: "1.0")
 ]
+```
+
+Then add `"DesignKit"` to your target's dependencies:
+
+```swift
+.target(
+    name: "MyApp",
+    dependencies: ["DesignKit"]
+)
 ```
 
 ---
