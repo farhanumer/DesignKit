@@ -14,6 +14,12 @@
 
 ---
 
+## Demo
+
+https://github.com/user-attachments/assets/0235a015-74ee-4b33-85d7-20c93e72fb83
+
+---
+
 ## Why DesignKit?
 
 DesignKit gives every iOS project a **single source of truth** for colors, typography, and spacing — all accessible through one unified `DesignKit` namespace. No more scattered hex codes, magic numbers, or inconsistent font sizes.
